@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { TransactionContext } from "../../TransactionContext";
+import React from "react";
+import { useTransaction } from "../../hooks/useTransaction";
 import { Container } from "./style";
 
 export const TransactionsTable = () => {
-  const {transactions} = useContext(TransactionContext)
+  const {transactions} = useTransaction()
 
   return (
     <Container>
